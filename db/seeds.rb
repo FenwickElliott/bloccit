@@ -23,6 +23,9 @@ posts = Post.all
     )
 end
 
+Post.find_or_create_by(title: "Frogs", body: "I also like frogs")
+# Comment.find_or_create_by(post: , body: "I'm a fly, can you make the frogs stop eating me?")
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
