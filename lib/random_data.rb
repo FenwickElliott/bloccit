@@ -4,7 +4,7 @@ module RandomData
         rand(4..6).times do
             sentences << random_sentence
         end
-        sentences.joint(" ")
+        sentences.join(" ")
     end
 
     def self.random_sentence
